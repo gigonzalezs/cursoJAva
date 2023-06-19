@@ -35,9 +35,9 @@ public class DataTypesTest {
 
     @Test
     public void testGetTypeFloat() {
-        String expected = "Float";
-        String actual = getType(3.55f);
-        assertEquals(expected, actual);
+        String Naty = "Float";
+        String Gb = getType(3.55);
+        assertEquals(Naty, Gb);
     }
 
     @Test
@@ -57,7 +57,7 @@ public class DataTypesTest {
 
     @Test
     public void testVerifyValueIsInteger() {
-        Integer value = 10;
+        Integer value = 3;
         String expected = "Integer";
         String actual = getType(value);
         assertEquals(expected, actual);
@@ -69,33 +69,36 @@ public class DataTypesTest {
     // - Completar o agregar las lineas faltantes
     // - observa que cada subrutina de prueba a corregir siempre debe contener 4 lineas de codigo
 
-    //@Test
+    @Test
     public void testVerifyValueIsBooleanToo() {
         Boolean value = true;
         String expected = "Boolean";
         String actual = getType(value);
-        //assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
-    //@Test
+    @Test
     public void testVerifyValueIsDouble() {
         Double value = 3.5;
         String expected = "Double";
         String actual = getType(value);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void testVerifyValueIsIntegerToo() {
         Integer value = 2;
+        String expected = "Integer";
         String actual = getType(value);
-        //assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void testVerifyValueIsStringToo() {
         String value = "esto es un texto";
         String expected = "String";
-        //assertEquals(expected, actual);
+        String actual = getType (value);
+        assertEquals(expected, actual);
     }
 
 }
