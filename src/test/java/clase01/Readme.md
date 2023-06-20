@@ -1,44 +1,69 @@
+¡Entiendo perfectamente! A continuación, te presento una versión revisada del archivo descriptivo, tratando de mantener los términos lo más sencillos y generales posible:
 
-#Sobre el archivo DataTypeTest
+#Clase 01:
+- Trabajando con variables y tipos de datos.
 
-linea 1: package se utiliza para agrupar archivos en la misma carpeta
 
-linea 3,4,5: importan componentes de otros programas para poder usarlos en el programa actual
+##Sobre el archivo DataTypeTest
 
-linea 7: Define el inicio de un programa, el cual esta contenido entre dos llaves "{" y "}" (ultima linea del archivo)
+### Como leer el codigo:
 
-linea 9,10, 11: es un subprograma o subrutina llamada main que al ejecutarse solo imprime el texto "Hello World"
 
-linea 13: define una etiqueta o anotacion para la subrutina de la linea 13
+1. **Asignación de variables**:
 
-- @Test es una anotacion que indica que la subrutina debe ser tratada como una "prueba unitaria"
+   En JAVA: `int numero = 5;`
 
-- Los programadores hacemos pruebas unitarias para validar que nuestro programa hace lo que tiene que hacer.
+   En lenguaje natural: "Declaramos una variable llamada 'numero' de tipo entero y le asignamos el valor 5."
 
-linea 14 define una subrutina de prueba llamada testGetTypeString
+2. **Operaciones matemáticas básicas**:
 
-linea 15 define una variable de tipo String llamada expected y le asigna como valor el texto "String"
+   En JAVA: `int suma = numero + 10;`
 
-- Sintaxis: [Tipo] [nombre] [operador de asignacion] [valor a asignar]
-- las variables siempre van a la izquierda del operador de asignacion (=)
-- los valores a asignar siempre van a la derecha del signo igual
-- En este caso se asigna un valor constante, el texto "String" nunca cambiara durante la vida del programa.
-- Tambien se pueden asignar el valor de otra variable (ejemplo A = B)
+   En lenguaje natural: "Declaramos una variable llamada 'suma' de tipo entero y le asignamos el resultado de sumar el valor de 'numero' y 10."
 
-linea 16 define otra variable de tipo String llamada actual y le asigna el resultado de una funcion. 
+3. **Funciones y métodos**:
 
-- Las funciones son subrutinas que devuelven un resultado despues de su ejecucion y este resultado se puede usar guardar en una variable tambien
+   En JAVA: `String nombreCompleto = getNombreCompleto("Juan", "Perez");`
 
-- En este caso, la variable actual termina siendo igual al resultado de la funcion getType, la cual recibe como entrada un texto "Hola Mundo"
+   En lenguaje natural: "Declaramos una variable llamada 'nombreCompleto' de tipo cadena y le asignamos el resultado devuelto por la función 'getNombreCompleto' que recibe como parámetros los valores 'Juan' y 'Perez'."
 
-linea 17: se invoca a la subrutina llamada assertEquals, que recibe dos variables como entradas: expected y actual
+4. **Estructuras de control - Condiciones**:
 
-- la subrutina assertEquals tiene el objetivo de confirmar (assert) que ambas entradas son iguales (equals). De ahi su nombre assertEquals.
+   En JAVA: `if (numero > 10) { System.out.println("El número es mayor a 10."); }`
 
-linea 20: toda linea que comienza con doble slash "//" es un comentario
+   En lenguaje natural: "Si el valor de 'numero' es mayor a 10, entonces muestra en consola la frase 'El número es mayor a 10'."
 
-- los comentarios son textos utiles para el programador. nunca se ejecutan
-- permiten identificar en lenguaje natural algunas partes del programa o lo que el programador desee dejar escrito para el futuro
-- se dice "comentar" a la accion de dejar un comentario en el codigo
-- se dice "descomentar" a la accion de remover el doble slash "//" al principio de una linea, dejando el comentario disponible para su ejecucion
-- normalmente se decomentan lineas que si contienen codigo ejecutable
+5. **Estructuras de control - Bucles**:
+
+   En JAVA: `for(int i = 0; i < 5; i++) { System.out.println(i); }`
+
+   En lenguaje natural: "Para una variable llamada 'i' que comienza en 0, mientras 'i' sea menor a 5, imprime el valor de 'i' y luego incrementa 'i' en uno."
+
+6. **Objetos y clases**:
+
+   En JAVA: `Persona persona = new Persona("Juan", "Perez");`
+
+   En lenguaje natural: "Creamos un objeto de tipo 'Persona' llamado 'persona', a través del uso del operador 'new', y proporcionamos 'Juan' y 'Perez' como parámetros para su constructor."
+
+
+
+### Descripcion linea por linea:
+**Línea 1:** Aquí usamos `package` para indicar que este archivo pertenece a un grupo específico de archivos relacionados en la misma carpeta o directorio.
+
+**Líneas 3, 4, 5:** Aquí estamos usando `import` para poder usar herramientas y funciones que existen en otros programas en nuestro código actual. Es como si estuviésemos cogiendo prestada una herramienta de un amigo.
+
+**Línea 7:** Define el inicio de nuestro programa, todo lo que se encuentra entre las llaves "{" y "}" en la última línea del archivo es parte de este programa.
+
+**Líneas 9-11:** Aquí está nuestro primer subprograma llamado `main`. Cuando ejecutamos el programa, esto es lo primero que se ejecuta. En este caso, simplemente imprime el texto "Hello World!".
+
+**Línea 13:** Aquí usamos `@Test`, que es una marca que ponemos antes de un subprograma para decir que este subprograma es una "prueba". Las pruebas son formas de verificar que nuestras herramientas (subprogramas) funcionan como queremos.
+
+**Línea 14-17:** Este es un ejemplo de una de esas pruebas. Creamos dos cajas (variables) llamadas `expected` y `actual`. Ponemos cosas en las cajas y luego comparamos si lo que hay dentro es lo mismo. Si no es lo mismo, entonces algo salió mal y la prueba nos lo dirá.
+
+**Línea 20:** Cualquier línea que comienza con `//` es un comentario y no se ejecutará. Los comentarios son notas que nos dejamos a nosotros mismos y a otras personas para entender mejor qué está pasando en nuestro programa.
+
+El objetivo general de este programa es verificar que una herramienta que hemos creado llamada `getType()` funciona correctamente. `getType()` debería ser capaz de decirnos qué tipo de cosa (por ejemplo, texto, número entero, número con decimales, verdadero o falso) le hemos dado.
+
+###Ejercicio 1:
+Para el ejercicio 1, tu tarea es crear más pruebas como las que ves en las líneas 14-17. Tienes que usar la herramienta `getType()` y comprobar que puede identificar correctamente qué tipo de cosas le das. Recuerda que es importante verificar que nuestras herramientas estén funcionando correctamente, ¡por eso hacemos estas pruebas!
+

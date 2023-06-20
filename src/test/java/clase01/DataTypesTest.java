@@ -36,7 +36,7 @@ public class DataTypesTest {
     @Test
     public void testGetTypeFloat() {
         String Naty = "Float";
-        String Gb = getType(3.55);
+        String Gb = getType(3.55f);
         assertEquals(Naty, Gb);
     }
 
