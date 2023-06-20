@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="clase02.EnterosTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-06-20T00:26:32" hostname="MBP-de-GB.fibertel.com.ar" time="0.054">
+  <properties/>
+  <testcase name="givenTwoIntegers_whenDivide_thenCorrectResult()" classname="clase02.EnterosTest" time="0.028"/>
+  <testcase name="givenPositiveInteger_whenCheckIsPositive_thenTrue()" classname="clase02.EnterosTest" time="0.005"/>
+  <testcase name="givenNegativeInteger_whenCheckIsNegative_thenTrue()" classname="clase02.EnterosTest" time="0.003"/>
+  <testcase name="givenTwoIntegers_whenCheckIsGreater_thenCorrectResult()" classname="clase02.EnterosTest" time="0.0"/>
+  <testcase name="givenTwoIntegers_whenSum_thenCorrectResult()" classname="clase02.EnterosTest" time="0.002"/>
+  <testcase name="givenZero_whenCheckIsZero_thenTrue()" classname="clase02.EnterosTest" time="0.001"/>
+  <testcase name="givenTwoIntegers_whenMultiply_thenCorrectResult()" classname="clase02.EnterosTest" time="0.002"/>
+  <testcase name="givenTwoIntegers_whenSubtract_thenCorrectResult()" classname="clase02.EnterosTest" time="0.0"/>
+  <testcase name="givenTwoEqualIntegers_whenCheckIsEqual_thenTrue()" classname="clase02.EnterosTest" time="0.0"/>
+  <testcase name="givenTwoIntegers_whenCheckIsLess_thenCorrectResult()" classname="clase02.EnterosTest" time="0.001"/>
+  <testcase name="givenTwoIntegers_whenCalculateModulus_thenCorrectResult()" classname="clase02.EnterosTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,4 +1,3 @@
-¡Entiendo perfectamente! A continuación, te presento una versión revisada del archivo descriptivo, tratando de mantener los términos lo más sencillos y generales posible:
 
 #Clase 01:
 - Trabajando con variables y tipos de datos.
