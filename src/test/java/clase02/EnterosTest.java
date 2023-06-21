@@ -3,7 +3,6 @@ package clase02;
 import static clase02.Enteros.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 public class EnterosTest {
