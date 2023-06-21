@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class DataTypesTest {
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Hola mundo");
     }
 
     // EJERCICIO 1
@@ -93,7 +93,7 @@ public class DataTypesTest {
     // - Completar o agregar las lineas faltantes
     // - observa que cada subrutina de prueba a corregir siempre debe contener 4 lineas de codigo
 
-    //@Test
+    @Test
     public void testVerifyValueIsBooleanToo() {
         Boolean value = true;
         String expected = "Boolean";
@@ -101,7 +101,7 @@ public class DataTypesTest {
         //assertEquals(expected, actual);
     }
 
-    //@Test
+    @Test
     public void testVerifyValueIsDouble() {
         Double value = 3.5;
         String expected = "Double";
