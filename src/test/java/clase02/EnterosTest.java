@@ -57,37 +57,84 @@ public class EnterosTest {
     @Test
     // Prueba para el método esNegativo(). Se espera que esta prueba verifique si un número es negativo correctamente.
     public void givenNegativeInteger_whenCheckIsNegative_thenTrue() {
-        // TODO: Implement this test
+        // Given
+        int value = -10;
+        // When
+        boolean actual = esNegativo(value);
+        // Then
+        assertTrue(actual);
     }
 
     @Test
     // Prueba para el método esCero(). Se espera que esta prueba verifique si un número es cero correctamente.
     public void givenZero_whenCheckIsZero_thenTrue() {
-        // TODO: Implement this test
+        // Given
+        int value = 0;
+        //when
+       boolean actual = esCero(value);
+        // Then
+      assertTrue(actual);
     }
 
     @Test
     // Prueba para el método resta(). Se espera que esta prueba calcule la resta de dos números correctamente.
     public void givenTwoIntegers_whenSubtract_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        int value1 = 5;
+        int value2 = 5;
+        int expected = 0;
+
+        //When
+        int actual = resta(value1, value2);
+
+        //Then
+        assertEquals(expected, actual
+        );
     }
 
     @Test
     // Prueba para el método multiplicacion(). Se espera que esta prueba calcule la multiplicación de dos números correctamente.
     public void givenTwoIntegers_whenMultiply_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        int value1 =5;
+        int value2 = 8;
+        int expected = 40;
+
+        //When
+        int actual = multiplicacion(value1, value2);
+
+        // Then
+        assertEquals(expected, actual);
     }
 
     @Test
     // Prueba para el método division(). Se espera que esta prueba calcule la división de dos números correctamente y maneje correctamente el caso de división por cero.
     public void givenTwoIntegers_whenDivide_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        int value1 = 10;
+        int value2 = 5;
+        int expected = 2;
+
+        //When
+        float actual = division(value1, value2);
+
+        //Then
+        assertEquals(expected, actual);
+
     }
 
     @Test
     // Prueba para el método esMayor(). Se espera que esta prueba verifique correctamente si un número es mayor que otro.
     public void givenTwoIntegers_whenCheckIsGreater_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        int value1 = 5;
+        int value2 = 3;
+
+        //When
+        boolean actual = esMayor(value1, value2);
+
+        //Then
+        assertTrue(actual);
     }
 
     @Test
