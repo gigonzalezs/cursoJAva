@@ -112,8 +112,8 @@ public class EnterosTest {
     public void givenTwoIntegers_whenDivide_thenCorrectResult() {
         // Given
         int value1 = 10;
-        int value2 = 5;
-        int expected = 2;
+        int value2 = 2;
+        int expected = 5;
 
         //When
         float actual = division(value1, value2);
@@ -140,13 +140,30 @@ public class EnterosTest {
     @Test
     // Prueba para el método esMenor(). Se espera que esta prueba verifique correctamente si un número es menor que otro.
     public void givenTwoIntegers_whenCheckIsLess_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        int value1 = 4;
+        int value2 = 10;
+
+        //When
+        boolean actual = esMenor(value1, value2);
+
+        //Then
+        assertTrue(actual);
     }
 
     @Test
     // Prueba para el método modulo(). Se espera que esta prueba calcule correctamente el módulo (resto de la división) de dos números y maneje correctamente el caso de división por cero.
     public void givenTwoIntegers_whenCalculateModulus_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        int value1 = 5;
+        int value2 = 2;
+        int expected = 1;
+
+        //When
+        int actual =modulo(value1, value2);
+
+        //Then
+        assertEquals(expected, actual);
     }
 }
 
