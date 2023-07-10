@@ -25,26 +25,50 @@ public class TextosTest {
     @Test
     // Prueba para el método aMayusculas(). Se espera que esta prueba verifique correctamente si una cadena se convierte a mayúsculas.
     public void givenString_whenConvertToUpperCase_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String palabra = "Zorro";
+        String expected = "ZORRO";
+
+        // When
+        String actual = aMayusculas(palabra);
+
+        // Then
+        assertEquals(expected, actual);
     }
 
     @Test
     // Prueba para el método aMinusculas(). Se espera que esta prueba verifique correctamente si una cadena se convierte a minúsculas.
     public void givenString_whenConvertToLowerCase_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String palabra = "Gilbert";
+        String expected = "gilbert";
+
+        // When
+        String actual = aMinusculas(palabra);
+
+        // Then
+        assertEquals(expected, actual);
     }
 
     @Test
     // Prueba para el método longitud(). Se espera que esta prueba verifique correctamente la longitud de una cadena.
     public void givenString_whenCalculateLength_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String nombre = "manuel";
+        int expected = 6;
+
+        // when
+        int actual = longitud(nombre);
+
+        // Then
+        assertEquals(expected, actual);
     }
 
     @Test
     // Prueba para el método esVacio(). Se espera que esta prueba verifique correctamente si una cadena es vacía.
     public void givenString_whenCheckIsEmpty_thenCorrectResult() {
         // Given
-        String texto = "esto_no_esta_vacio_y_debes_dejarlo_vacio";
+        String texto = "";
 
         // When
         Boolean actual = esVacio(texto);
@@ -64,6 +88,7 @@ public class TextosTest {
         String actual = removerEspacios(conEspacios);
 
         // Then
+        assertEquals(sinEspacios, actual);
     }
 
     @Test
@@ -74,7 +99,7 @@ public class TextosTest {
         String palabra = "sol";
 
         // When
-        boolean actual = contienePalabra(textoCompleto, ?);
+        boolean actual = contienePalabra(textoCompleto, palabra);
 
         // Then
         assertTrue(actual);
@@ -88,7 +113,7 @@ public class TextosTest {
         String textoB = "Perro";
 
         // When
-        boolean actual = ?
+        boolean actual = false;
 
         // Then
         assertTrue(actual);
