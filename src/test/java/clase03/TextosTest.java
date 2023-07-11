@@ -113,7 +113,7 @@ public class TextosTest {
         String textoB = "Perro";
 
         // When
-        boolean actual = false;
+        boolean actual = sonIguales(textoA, textoB);
 
         // Then
         assertTrue(actual);
@@ -122,18 +122,28 @@ public class TextosTest {
     @Test
     // Prueba para el método sonIgualesSinCasoSensitivo(). Se espera que esta prueba verifique correctamente si dos cadenas son iguales ignorando las diferencias de mayúsculas y minúsculas.
     public void givenTwoStrings_whenCheckAreEqualIgnoreCase_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String textoA = "pERRO" ;
+        String textoB = "pErRo" ;
+
+        //When
+        boolean actual = sonIgualesSinCasoSensitivo(textoA, textoB);
+
+        // Then
+        assertTrue(actual);
     }
 
     @Test
     // Prueba para el método extraerHasta(). Se espera que esta prueba verifique correctamente si se extrae una subcadena desde un inicio hasta un fin.
     public void givenStringAndIndexes_whenExtractSubstring_thenCorrectResult() {
         // Given
+        //                      ----------1---------2---------3---------4---------5---------
+        //                      012345678901234567890123456789012345678901234567890123456789
         String textoCompleto = "El sol sale todos los dias por la mañana.";
-        String expected = "sol";
+        String expected = "dias";
 
         // When
-        String actual = extraerHasta(textoCompleto,3,5);
+        String actual = extraerHasta(textoCompleto,22,26);
 
         // Then
         assertEquals(expected, actual);
@@ -142,18 +152,46 @@ public class TextosTest {
     @Test
     // Prueba para el método comienzaCon(). Se espera que esta prueba verifique correctamente si una cadena comienza con un prefijo especifico.
     public void givenStringAndPrefix_whenCheckStartsWith_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String palabra = "Intenso";
+        String prefijo = "In";
+
+        //When
+       boolean actual = comienzaCon(palabra,prefijo);
+
+        //Then
+        assertTrue(actual);
     }
 
     @Test
     // Prueba para el método terminaCon(). Se espera que esta prueba verifique correctamente si una cadena termina con un sufijo especifico.
     public void givenStringAndSuffix_whenCheckEndsWith_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String palabra = "QUIERO TRABAJAR Y GANAR BUEN DINERO EN DOLARES";
+        String sufijo = "RES";
+
+        //When
+        boolean actual = terminaCon(palabra, sufijo);
+
+        //Then
+        assertTrue(actual);
     }
 
     @Test
     // Prueba para el método reemplazar(). Se espera que esta prueba verifique correctamente si una cadena es reemplazada por otra.
     public void givenStringAndReplacement_whenReplace_thenCorrectResult() {
-        // TODO: Implement this test
+        // Given
+        String decreto = "quiero trabajar y ganar buen dinero en dolares";
+        String buscar = "dolares";
+        String reemplazo = "euros";
+        String expected = "quiero trabajar y ganar buen dinero en euros";
+
+
+        //When
+        String actual = reemplazar(decreto, buscar, reemplazo);
+
+        //Then
+        assertEquals(expected, actual);
+
     }
 }
